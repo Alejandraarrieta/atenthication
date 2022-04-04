@@ -2,7 +2,8 @@ package database
 import(
 	"context"
 	"encoding/json"
-	"go.mongodb.org/mongo-driver/mongo"
+	//"go.mongodb.org/mongo-driver/mongo"
+	"github.com/mongodb/mongo-go-driver"
 )
 //funcion que crea e inserta user database
 func CreateUser(w http.ResponseWriter, r *http.Request){
