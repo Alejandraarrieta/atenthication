@@ -2,7 +2,11 @@ package database
 import(
 	"context"
 	"encoding/json"
-	//"go.mongodb.org/mongo-driver/mongo"
+	"net/http"
+	"time"
+	//"go.mongodb.org/mongo-driver/mongo" //imported and not used:
+	//"go.mongodb.org/mongo-driver/bson/primitive" //imported and not used:
+	"github.com/Alejandraarrieta/atenthication/models"
 	"github.com/mongodb/mongo-go-driver"
 )
 //funcion que crea e inserta user database
@@ -24,7 +28,7 @@ func SearchUser(w http.ResponseWriter, r *http.Request){
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
 	cursor, err := collection.Find(ctx, bson.M{})
 	if err != nil {
-		w.WriteHeader(http.StatusInternaServerError)
+		w.WriteHeader(http.StatusInternalServerError)
 		w.Write([]byte(`{ "message": "` + err.Error()+ `"}`))
 		return
 	}

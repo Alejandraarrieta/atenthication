@@ -3,13 +3,15 @@ import (
     "net/http"
 	"time"
 	"context"
-	"fmt"
     "github.com/gorilla/mux"
 	//"github.com/mongodb/mongo-go-driver/mongo"
-	//"github.com/Alejandraarrieta/atenthication/database"
+	"github.com/Alejandraarrieta/atenthication/database"
 	//"github.com/Alejandraarrieta/atenthication/models"
 	//"github.com/Alejandraarrieta/atenthication/jwt"
-	//github.com/mongodb/mongo-go-driver
+	// "github.com/mongodb/mongo-go-driver"
+	//"go.mongodb.org/mongo-driver"
+	"github.com/mongodb/mongo-go-driver"
+	 
 )
 var client *mongo.Client
 

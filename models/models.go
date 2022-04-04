@@ -1,6 +1,10 @@
 package models
 
-import jwt "github.com/dgrijalva/jwt-go"
+import ( 
+	jwt "github.com/dgrijalva/jwt-go"
+	"go.mongodb.org/mongo-driver/bson/primitive"
+	//"github.com/mongodb/mongo-go-driver"
+)
 //struct to create token with the user and claims standard
 type Claim struct{
 	User  `json:"user"`
@@ -10,7 +14,6 @@ type Claim struct{
 //struct to return token 
 type ResponseToken struct{
 	Token string `json:"token"`
-
 }
 
 type User struct {

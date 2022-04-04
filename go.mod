@@ -1,9 +1,8 @@
-module repogithub
+module github.com/Alejandraarrieta/atenthication
 
 go 1.17
 
 require (
-	github.com/Alejandraarrieta/atenthication v0.0.0-20220404142812-bbbbff2bd915 // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
