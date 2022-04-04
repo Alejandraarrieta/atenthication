@@ -7,7 +7,10 @@ import(
 	//"go.mongodb.org/mongo-driver/mongo" //imported and not used:
 	//"go.mongodb.org/mongo-driver/bson/primitive" //imported and not used:
 	"github.com/Alejandraarrieta/atenthication/models"
-	"github.com/mongodb/mongo-go-driver"
+	//"github.com/mongodb/mongo-go-driver"
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 //funcion que crea e inserta user database
 func CreateUser(w http.ResponseWriter, r *http.Request){

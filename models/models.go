@@ -1,9 +1,9 @@
 package models
 
 import ( 
-	jwt "github.com/dgrijalva/jwt-go"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	//"github.com/mongodb/mongo-go-driver"
+	jwt "github.com/gopkg.in/dgrijalva/jwt-go.v3"
+	//"go.mongodb.org/mongo-driver/bson/primitive"
+	"go.mongodb.org/mongo-driver/bson"
 )
 //struct to create token with the user and claims standard
 type Claim struct{
