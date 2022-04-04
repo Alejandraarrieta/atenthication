@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"encoding/json"
 	"fmt"
-	"gitlab.servicios.grassisa.com.ar/grassi/be-login/-/blob/main/database
-	"github.com/Alejandraarrieta/authentication/models"
+	"github.com/Alejandraarrieta/atenthication/database"
+	"github.com/Alejandraarrieta/atenthication/models"
 )
 
 var (
