@@ -1,22 +1,23 @@
 package models
-
-import ( 
-	jwt "github.com/gopkg.in/dgrijalva/jwt-go.v3"
-	//"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/bson"
+//import "go.mongodb.org/mongo-driver/bson/primitive"
+/*( 
+	//jwt "github.com/dgrijalva/jwt-go"
+	"go.mongodb.org/mongo-driver/bson/primitive"
+	//"go.mongodb.org/mongo-driver/bson"	
+   // "go.mongodb.org/mongo-driver/bson/primitive"
 )
 //struct to create token with the user and claims standard
-type Claim struct{
+/*type Claim struct{
 	User  `json:"user"`
 	jwt.StandardClaims
-}
+}*/
 
 //struct to return token 
 type ResponseToken struct{
 	Token string `json:"token"`
 }
 
-type User struct {
+type UserData struct {
 	Name     string `json:"name,omitempty" bson:"name,omitempty"`
 	Lastname string `json:"lastname" bson:"lastname,omitempty"`
 	Email    string `json:"email,omitempty" bson:"email,omitempty"`

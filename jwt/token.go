@@ -1,11 +1,10 @@
 package jwt
-
-import (
+import(
 	"crypto/rsa"
 	"io/ioutil"
 	"log"
 	//jwt "github.com/dgrijalva/jwt-go"
-	jwt "github.com/gopkg.in/dgrijalva/jwt-go.v3"
+	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/dgrijalva/jwt-go/request"
 	"time"
 	"net/http"
@@ -14,6 +13,11 @@ import (
 	"github.com/Alejandraarrieta/atenthication/database"
 	"github.com/Alejandraarrieta/atenthication/models"
 )
+
+type Claim struct{
+	User  `json:"user"`
+	jwt.StandardClaims
+}
 
 var (
 	privateKey *rsa.PrivateKey
